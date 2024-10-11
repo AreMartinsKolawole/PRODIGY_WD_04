@@ -1,0 +1,157 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333333;
+}
+
+header {
+    background-color: #2c3e50;
+    padding: 20px;
+    text-align: center;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+header ul li a:hover {
+    color: #3498db;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    color: #3498db;
+}
+
+p {
+    color: #333333;
+}
+
+#home {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    padding: 100px 20px;
+}
+
+#home .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.home-photo {
+    flex: 1;
+    text-align: center;
+}
+
+.home-photo img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.slide-in {
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #2980b9;
+}
